@@ -10,6 +10,9 @@ import org.elasticsearch.client.RestHighLevelClient;
 
 import java.io.*;
 
+/**
+ * @link -> https://www.jianshu.com/p/871f33c2d515
+ */
 public class EsService {
     public static RestHighLevelClient client;
     public static final String INDEX_FORUM_MYSQL = "forum-mysql";
