@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-kafka-producer/pom.xml" />
         <option value="$PROJECT_DIR$/spring-kafka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-stream-kafka/pom.xml" />
       </list>
     </option>
   </component>

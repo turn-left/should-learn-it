@@ -23,11 +23,15 @@ public class KafkaConsumer {
                 + ",time:" + record.timestamp());
     }
 
-    @KafkaListener(id = "001", groupId = GroupConstant.SPRING_KAFKA_CONSUMER_GROUP_02, topicPartitions = {
-            @TopicPartition(topic = TopicConstant.SPRING_KAFKA_TOPIC_CHAP_01, partitions = {"0"}),
-            @TopicPartition(topic = TopicConstant.SPRING_KAFKA_TOPIC_SPECIFIED_CONSUMER, partitions = {"1"})
+    @KafkaListener(groupId = GroupConstant.SPRING_KAFKA_CONSUMER_GROUP_02, topicPartitions = {
+            @TopicPartition(topic = TopicConstant.SPRING_KAFKA_TOPIC_CHAP_01, partitions = {"1"}),
+            @TopicPartition(topic = TopicConstant.SPRING_KAFKA_TOPIC_SPECIFIED_CONSUMER, partitions = {"0"})
     })
     public void onMessageSpecified(ConsumerRecord<String, Object> record) {
-
+        System.err.println("kafka指定主题|分区|offset消费·->topic:" + record.topic()
+                + "partition:" + record.partition()
+                + ",key:" + record.key()
+                + ",value:" + record.value()
+                + ",time:" + record.timestamp());
     }
 }
