@@ -2,16 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-stream-kafka" />
         <module name="elasticsearch-demo" />
+        <module name="kubernetes-in-action" />
         <module name="kafka-consumer" />
+        <module name="kafka-producer" />
+        <module name="springcloud-stream-kafka" />
         <module name="spring-kafka-producer" />
         <module name="spring-kafka-consumer" />
-        <module name="kafka-producer" />
       </profile>
     </annotationProcessing>
   </component>

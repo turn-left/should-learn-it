@@ -2,6 +2,7 @@ package com.ethen.es;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpHost;
+import org.elasticsearch.action.bulk.BulkRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RestClient;
@@ -42,7 +43,6 @@ public class EsService {
             request.source(source);
             IndexResponse response = client.index(request);
             System.err.println(response);
-//            client.bulk() 批处理操作
         }
     }
 }

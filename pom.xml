@@ -12,6 +12,7 @@
         <module>kafka-consumer</module>
         <module>kafka-producer</module>
         <module>elasticsearch-demo</module>
+        <module>kubernetes-in-action</module>
     </modules>
 
     <properties>
