@@ -10,6 +10,7 @@
         <module name="elasticsearch-demo" />
         <module name="kubernetes-in-action" />
         <module name="kafka-consumer" />
+        <module name="elasticsearch-in-action" />
         <module name="kafka-producer" />
         <module name="springcloud-stream-kafka" />
         <module name="spring-kafka-producer" />
