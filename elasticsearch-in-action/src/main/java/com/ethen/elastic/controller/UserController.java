@@ -12,6 +12,13 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 创建索引
+     *
+     * @param params
+     * @return
+     * @see -> https://zhuanlan.zhihu.com/p/159138736
+     */
     @PostMapping("/v1/user/index")
     public Object createUserIndex(@RequestBody JSONObject params) {
         return userService.createUserIndex(params.getString("indexName"));
