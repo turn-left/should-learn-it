@@ -13,6 +13,9 @@
         <module>kafka-producer</module>
         <module>elasticsearch-demo</module>
         <module>kubernetes-in-action</module>
+        <module>on-java-8</module>
+        <module>netty-in-action</module>
+        <module>art-of-concurrency</module>
     </modules>
 
     <properties>
