@@ -16,6 +16,7 @@
         <module>on-java-8</module>
         <module>netty-in-action</module>
         <module>art-of-concurrency</module>
+        <module>leetcode-in-action</module>
     </modules>
 
     <properties>
