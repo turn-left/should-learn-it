@@ -6,7 +6,7 @@ package com.ethen.proxy;
 public class TargetImpl implements Target {
     @Override
     public String execute() {
-        System.err.println(this.getClass().getCanonicalName() + "executed!");
+        System.err.println(this.getClass().getCanonicalName() + " executed!");
         return "executed";
     }
 }
