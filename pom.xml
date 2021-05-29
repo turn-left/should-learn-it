@@ -17,6 +17,7 @@
         <module>netty-in-action</module>
         <module>art-of-concurrency</module>
         <module>leetcode-in-action</module>
+        <module>disign-patterns</module>
     </modules>
 
     <properties>

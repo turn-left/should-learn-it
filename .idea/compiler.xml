@@ -7,18 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-in-action" />
         <module name="elasticsearch-demo" />
         <module name="kubernetes-in-action" />
         <module name="kafka-consumer" />
-        <module name="elasticsearch-in-action" />
         <module name="leetcode-in-action" />
         <module name="kafka-producer" />
-        <module name="springcloud-stream-kafka" />
+        <module name="disign-patterns" />
         <module name="art-of-concurrency" />
         <module name="spring-kafka-producer" />
         <module name="spring-kafka-consumer" />
         <module name="on-java-8" />
+        <module name="netty-in-action" />
+        <module name="elasticsearch-in-action" />
+        <module name="springcloud-stream-kafka" />
       </profile>
     </annotationProcessing>
   </component>
