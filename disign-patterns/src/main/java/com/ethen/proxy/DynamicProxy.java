@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 
 /**
  * java动态代理
+ * 动态代理主要是通过反射机制，在运行时动态生成所需代理的class.
  */
 public class DynamicProxy implements InvocationHandler {
     private Target target;
