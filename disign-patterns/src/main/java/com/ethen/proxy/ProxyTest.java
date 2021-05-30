@@ -32,7 +32,6 @@ public class ProxyTest {
 
     @Test
     public void cglibProxyTest() {
-        TargetImpl target = new TargetImpl();
         TargetImpl proxyTarget = (TargetImpl) createProxy(TargetImpl.class);
         System.err.println(proxyTarget.execute());
     }
