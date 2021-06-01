@@ -12,5 +12,8 @@ public class Demo01 {
                 break ok;
             }
         }
+        Object str = "a";
+        int hashCode = str.hashCode();
+        System.err.println(hashCode);
     }
 }
