@@ -26,6 +26,7 @@ public class CASDemo {
          */
 //        count++;
         int expectCount;
+        // 自旋
         while (!compareAndSwap(expectCount = getCount(), count + 1)) ;
     }
 

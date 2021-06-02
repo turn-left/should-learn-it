@@ -8,3 +8,4 @@
 - [ThinkWon的博客-java系统总结](https://blog.csdn.net/thinkwon/category_9731418.html)
 - [splunk平台VS Elastic生态](https://blog.51cto.com/splunkchina/1948105)
 - [splunk入门实践](https://www.freebuf.com/articles/database/123006.html)
+- [支付系统设计](http://doc.cocolian.cn/essay/)
