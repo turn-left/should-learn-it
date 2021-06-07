@@ -18,6 +18,7 @@
         <module>art-of-concurrency</module>
         <module>leetcode-in-action</module>
         <module>disign-patterns</module>
+        <module>jdk8-source</module>
     </modules>
 
     <properties>

@@ -11,16 +11,19 @@
         <module name="kubernetes-in-action" />
         <module name="kafka-consumer" />
         <module name="leetcode-in-action" />
+        <module name="jdk8-source" />
         <module name="kafka-producer" />
         <module name="disign-patterns" />
         <module name="art-of-concurrency" />
         <module name="spring-kafka-producer" />
         <module name="spring-kafka-consumer" />
-        <module name="on-java-8" />
         <module name="netty-in-action" />
         <module name="elasticsearch-in-action" />
         <module name="springcloud-stream-kafka" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="on-java-8" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

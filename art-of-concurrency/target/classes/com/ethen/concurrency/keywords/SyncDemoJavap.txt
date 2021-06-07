@@ -1,0 +1,137 @@
+Classfile /D:/idea2021/should-learn-it/art-of-concurrency/target/classes/com/ethen/concurrency/keywords/SynchronizedDemo.class
+  Last modified 2021-6-1; size 849 bytes
+  MD5 checksum 3e4e51ad42663a6a5dac5d159f3296e7
+  Compiled from "SynchronizedDemo.java"
+public class com.ethen.concurrency.keywords.SynchronizedDemo
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #7.#27         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #28.#29        // java/lang/System.err:Ljava/io/PrintStream;
+   #3 = String             #30            // synchronized doGet ...
+   #4 = Methodref          #31.#32        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Fieldref           #6.#33         // com/ethen/concurrency/keywords/SynchronizedDemo.count:I
+   #6 = Class              #34            // com/ethen/concurrency/keywords/SynchronizedDemo
+   #7 = Class              #35            // java/lang/Object
+   #8 = Utf8               count
+   #9 = Utf8               I
+  #10 = Utf8               <init>
+  #11 = Utf8               ()V
+  #12 = Utf8               Code
+  #13 = Utf8               LineNumberTable
+  #14 = Utf8               LocalVariableTable
+  #15 = Utf8               this
+  #16 = Utf8               Lcom/ethen/concurrency/keywords/SynchronizedDemo;
+  #17 = Utf8               doGet
+  #18 = Utf8               syncSelfCount
+  #19 = Utf8               ()I
+  #20 = Utf8               StackMapTable
+  #21 = Class              #34            // com/ethen/concurrency/keywords/SynchronizedDemo
+  #22 = Class              #35            // java/lang/Object
+  #23 = Class              #36            // java/lang/Throwable
+  #24 = Utf8               <clinit>
+  #25 = Utf8               SourceFile
+  #26 = Utf8               SynchronizedDemo.java
+  #27 = NameAndType        #10:#11        // "<init>":()V
+  #28 = Class              #37            // java/lang/System
+  #29 = NameAndType        #38:#39        // err:Ljava/io/PrintStream;
+  #30 = Utf8               synchronized doGet ...
+  #31 = Class              #40            // java/io/PrintStream
+  #32 = NameAndType        #41:#42        // println:(Ljava/lang/String;)V
+  #33 = NameAndType        #8:#9          // count:I
+  #34 = Utf8               com/ethen/concurrency/keywords/SynchronizedDemo
+  #35 = Utf8               java/lang/Object
+  #36 = Utf8               java/lang/Throwable
+  #37 = Utf8               java/lang/System
+  #38 = Utf8               err
+  #39 = Utf8               Ljava/io/PrintStream;
+  #40 = Utf8               java/io/PrintStream
+  #41 = Utf8               println
+  #42 = Utf8               (Ljava/lang/String;)V
+{
+  static int count;
+    descriptor: I
+    flags: ACC_STATIC
+
+  public com.ethen.concurrency.keywords.SynchronizedDemo();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/ethen/concurrency/keywords/SynchronizedDemo;
+
+  public synchronized void doGet();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_SYNCHRONIZED
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.err:Ljava/io/PrintStream;
+         3: ldc           #3                  // String synchronized doGet ...
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lcom/ethen/concurrency/keywords/SynchronizedDemo;
+
+  public int syncSelfCount();
+    descriptor: ()I
+    flags: ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: aload_0
+         1: dup
+         2: astore_1
+         3: monitorenter
+         4: getstatic     #5                  // Field count:I
+         7: dup
+         8: iconst_1
+         9: iadd
+        10: putstatic     #5                  // Field count:I
+        13: aload_1
+        14: monitorexit
+        15: ireturn
+        16: astore_2
+        17: aload_1
+        18: monitorexit
+        19: aload_2
+        20: athrow
+      Exception table:
+         from    to  target type
+             4    15    16   any
+            16    19    16   any
+      LineNumberTable:
+        line 11: 0
+        line 12: 4
+        line 13: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      21     0  this   Lcom/ethen/concurrency/keywords/SynchronizedDemo;
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 16
+          locals = [ class com/ethen/concurrency/keywords/SynchronizedDemo, class java/lang/Object ]
+          stack = [ class java/lang/Throwable ]
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #5                  // Field count:I
+         4: return
+      LineNumberTable:
+        line 4: 0
+}
+SourceFile: "SynchronizedDemo.java"
